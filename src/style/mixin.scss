@@ -1,0 +1,15 @@
+$themeC: #3190e8;       // 主题颜色
+$pw: 20;                  // 左右外边距
+$pt: 20;									// 上边距
+
+$baseFontSize: 64; // 基于视觉稿横屏尺寸/100得出的基准font-size
+@function pxFrem($px){
+	@return ($px / $baseFontSize) * 1rem;
+}
+
+@mixin contCss{
+  background-color: #fff;
+  margin-bottom: pxFrem(20);
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+}
